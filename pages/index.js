@@ -13,6 +13,9 @@ export default function Home() {
 
       <h1>HI! is just testing app</h1>
 
+
+      <h1>i am from Bangladesh</h1>
+
         
     </div>
   )
