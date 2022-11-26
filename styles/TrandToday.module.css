@@ -1,0 +1,58 @@
+.trandTodayWrp {
+    display: flex;
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    margin-top: 3px;
+    box-shadow: 1px 1px 6px 1px #00000073;
+
+}
+
+
+.trandingToday {
+    background: black;
+    color: #fff;
+    width: fit-content;
+    height: 100%;
+    padding: 6px;
+    white-space: nowrap;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.trandingToday>h4 {
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    padding-top: 6px;
+    z-index: -1;
+}
+
+.trandIcons {
+    color: #fff !important;
+    font-size: 22px;
+    margin-right: 7px;
+    transform: rotate(-20deg);
+    z-index: 99;
+
+
+}
+
+@media (max-width:990px) {
+
+
+    .trandTodayWrp {
+        width: 95%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    /* this css for only notice conponnent */
+    .noticeCall {
+        width: 100%;
+    }
+
+
+}

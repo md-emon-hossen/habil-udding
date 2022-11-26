@@ -21,12 +21,12 @@
 .footerhadering {
     font-size: 22px;
     padding: 30px 0px;
-    padding-left:10%;
+
     
 }
-/* .ul{
-    
-} */
+.ul{
+    transform: translateX(-35px);
+}
 
 .Subscribe {
     width: 80%;

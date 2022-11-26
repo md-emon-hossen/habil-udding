@@ -1,0 +1,51 @@
+.inportamtLinkWrp {
+    box-shadow: 1px 1px 6px 1px #00000073;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.mainiiiTitle {
+    background: tomato;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 90%;
+    height: 30px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-top: 10px !important;
+    margin-right: auto;
+    text-align: center;
+
+
+
+}
+
+.importantsLink {
+    width: 90%;
+    margin: auto;
+}
+
+.importantsLink ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.importantsLink ul li:hover {
+    background: rgb(238, 238, 238);
+}
+
+@media (max-width:990px) {
+    .inportamtLinkWrp {
+        margin-top: 20px;
+
+    }
+}
+
+@media (max-width:768px) {
+    .inportamtLinkWrp {
+        margin-top: 0px;
+
+    }
+}

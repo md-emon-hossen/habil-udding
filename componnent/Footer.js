@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerWrp}>
-        <div>
+        <div className={styles.singleWrp}>
             <h4 className={styles.footerhadering}>Get in Touch</h4>
             <ul className={styles.ul}>
                 <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} />Campus Contact</a></li>
@@ -25,7 +25,7 @@ export default function Footer() {
                 <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} />Covid-19 updates</a></li>
             </ul>
         </div>
-        <div>
+        <div className={styles.singleWrp}>
             <h4 className={styles.footerhadering}>Branding</h4>
             <ul className={styles.ul}>
                 <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} />Campus Contact</a></li>
@@ -38,7 +38,7 @@ export default function Footer() {
                 <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} />Covid-19 updates</a></li>
             </ul>
         </div>
-        <div>
+        <div className={styles.singleWrp}>
             <h4 className={styles.footerhadering}>Useful Links</h4>
             <ul className={styles.ul}>
                 <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} />Campus Contact</a></li>
@@ -51,7 +51,7 @@ export default function Footer() {
                 <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} />Covid-19 updates</a></li>
             </ul>
         </div>
-        <div>
+        <div className={styles.singleWrp}>
             <h4 className={styles.footerhadering}>Subscribe Us!</h4>
             <div className={styles.Subscribe}>
                 <input type="email" placeholder="Enter Email Address" />

@@ -1,0 +1,26 @@
+.menuWrp {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 6px 1px #00000073;
+
+}
+
+.menuWrp h3 {
+    font-weight: 700;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.menuWrp ul {
+    list-style: none;
+    text-align: left;
+}
+
+.menuWrp ul li {
+    padding: 12px 0px 10px 18px;
+}
+
+.menuWrp ul li:hover {
+    background: rgb(243, 243, 243);
+}
