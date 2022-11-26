@@ -1,0 +1,63 @@
+.profilewrp {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: -7px;
+    box-shadow: 1px 1px 6px 1px #00000073;
+    margin-bottom: 20px;
+
+}
+
+.mainiiiTitle {
+    background: tomato;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 90%;
+    height: 30px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-top: 10px !important;
+    margin-right: auto;
+    text-align: center;
+
+
+}
+
+.headTImg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.headTeacherImg {
+
+    background-size: cover;
+    box-shadow: 0px 1px 3px -1px black;
+    background-repeat: no-repeat;
+    width: 130px;
+    margin: auto;
+    height: 140px;
+    margin-top: 10px;
+}
+
+.teacherName {
+    background: rgb(26, 26, 255);
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 90%;
+    height: 30px;
+    padding-top: 15px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+
+@media (max-width:990px) {
+    .profilewrp {
+        margin-top: -10px;
+        margin-bottom: 0px;
+    }
+}

@@ -5,18 +5,18 @@ export default function Menu() {
     return (
         <div class={styles.menuWrp}>
             <h3>Menu</h3>
-            <ul>
-                <Link href='/'><li><a>Home</a></li></Link>
-                <Link href='/notice'><li><a>Notic</a></li></Link>
-                <Link href='/classroutine'> <li><a>Class Routine</a></li></Link>
-                <Link href='/sylebus'> <li><a>Syllabus</a></li></Link>
-                <Link href='/examroutine'><li><a>Exam Routine</a></li></Link>
-                <Link href='/notice'><li><a>Exam Result</a></li></Link>
-                <Link href='/apply'><li><a>Online Registration</a></li></Link>
-                <Link href='/notice'><li><a>Exam Admit Card</a></li></Link>
-                <Link href='/notice'><li><a>School Cartificate</a></li></Link>
-                <Link href='/login'><li><a>Login</a></li></Link>
-            </ul >
+            <div className={styles.div}>
+                <Link className={styles.link} href='/'>Home</Link>
+                <Link className={styles.link} href='/notice'>Notic</Link>
+                <Link className={styles.link} href='/classroutine'> Class Routine</Link>
+                <Link className={styles.link} href='/sylebus'> Syllabus</Link>
+                <Link className={styles.link} href='/examroutine'>Exam Routine</Link>
+                <Link className={styles.link} href='/notice'>Exam Result</Link>
+                <Link className={styles.link} href='/apply'>Online Registration</Link>
+                <Link className={styles.link} href='/notice'>Exam Admit Card</Link>
+                <Link className={styles.link} href='/notice'>School Cartificate</Link>
+                <Link className={styles.link} href='/login'>Login</Link>
+            </div>
         </div >
     )
 }

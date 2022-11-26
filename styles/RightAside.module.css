@@ -1,0 +1,35 @@
+.rightAsidewrp {
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+@media (max-width:990px) {
+    .rightAsidewrp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 98%;
+        margin: auto;
+        grid-gap: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+
+    }
+}
+
+@media (max-width:768px) {
+    .rightAsidewrp {
+        width: 97%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:550px) {
+    .rightAsidewrp {
+        width: 100%;
+        margin-left: 10px;
+
+    }
+}

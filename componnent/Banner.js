@@ -4,6 +4,7 @@ import two from '../public/2.jpg';
 import three from '../public/3.jpg';
 import four from '../public/4.jpeg';
 import styles from "../styles/Banner.module.css";
+import Image from 'next/image';
 
 export default function Banner() {
   const img = [one, two, three, four];
@@ -34,7 +35,7 @@ export default function Banner() {
 
   return (
       <div className={styles.bannerImgWrp}>
-          <img src={img[imgValue]} alt="Banner Img" />
+          <Image src={img[imgValue]} alt="Banner Img" />
       </div>
   )
 }

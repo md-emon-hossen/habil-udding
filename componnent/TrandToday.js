@@ -8,8 +8,9 @@ export default function TrandToday({clasname}) {
                 <h4><TfiAnnouncement className={styles.trandIcons} />Trending Today</h4>
             </div>
             <div className={styles.marquee}>
-                <marquee behavior="scroll" direction="left">this a a school website......... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quidem magnam iusto in quisquam suscipit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, excepturi. Adipisci non sed accusamus modi consequuntur repellat saepe quibusdam assumenda.  </marquee>
+                <marquee behavior="scroll" direction="left">ভর্তি বিজ্ঞপ্তি: ৬ষ্ঠ থেকে নবম শ্রেণি ( বিজ্ঞান ও ব্যবসায় শিক্ষা ) পর্যন্ত ভর্তি প্রক্রিয়া চলছে || এইচ এস সি - ২০২২ চুড়ান্ত মডেল টেস্ট পরীক্ষার ফলাফল || HSC Board Exam Routine - 2022 ||  </marquee>
             </div>
         </div>
     )
 }
+
