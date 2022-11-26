@@ -1,0 +1,25 @@
+
+.headerWrp {
+
+    background: #fff;
+    box-shadow: 1px 1px 6px 1px #00000073;
+    z-index: 100;
+
+
+}
+
+.headerContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: auto;
+
+}
+
+@media (max-width:990px) {
+
+    .headerContainer {
+        grid-template-columns: 2fr 1fr;
+    }
+}

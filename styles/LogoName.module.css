@@ -1,0 +1,11 @@
+.logonameWrp {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.logo>img {
+    width: 60px;
+    height: 60px;
+
+}

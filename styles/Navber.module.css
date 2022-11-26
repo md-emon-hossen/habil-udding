@@ -1,0 +1,89 @@
+
+.NavItem {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moboNav {
+    display: none;
+}
+
+
+
+@media (max-width:990px) {
+
+    .moboNav {
+        display: block;
+        float: right;
+        font-size: 22px;
+        z-index: 100;
+
+    }
+
+
+    .NavItem {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        color: black;
+        z-index: 100;
+        position: fixed;
+        left: 0;
+        top: 65px;
+        height: 100ch;
+        margin-left: 0px;
+        text-align: center;
+        width: 30%;
+        padding-top: 10px;
+        overflow: scroll;
+        cursor: pointer;
+
+    }
+
+    .NavItem::-webkit-scrollbar {
+        display: none;
+    }
+
+    .moboIcons {
+        cursor: pointer;
+    }
+
+    .link>li {
+        padding-bottom: 20px;
+        font-weight: 500;
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .link :hover {
+        background: rgb(243, 243, 243);
+
+    }
+
+    .active {
+
+        display: block;
+        animation: fade_in_show .6s ease-in-out;
+    }
+
+}
+
+@media (max-width:768px) {
+    .NavItem {
+        width: 38%;
+    }
+}
+
+@keyframes fade_in_show {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
