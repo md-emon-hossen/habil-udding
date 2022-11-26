@@ -1,0 +1,185 @@
+.footer{
+    background: rgb(29, 29, 29);
+    color: #fff;
+}
+
+.footerWrp {
+    display: grid;
+    width:95%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 150px;
+    justify-content: space-between;
+    row-gap: 20px;
+  
+}
+
+.rightArrowIcons {
+    margin-right: 10px;
+}
+
+.footerhadering {
+    font-size: 22px;
+    padding: 30px 0px;
+    padding-left:10%;
+    
+}
+/* .ul{
+    
+} */
+
+.Subscribe {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.Subscribe>input {
+    padding: 13px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+}
+
+.Subscribe>input::placeholder {
+    color: rgb(224, 224, 224);
+}
+
+.Subscribe>button {
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    background-color: #2E3094;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.Subscribe>button:hover {
+    background-color: #3033b0;
+}
+
+.footerWrp>div>ul {
+    list-style: none;
+}
+
+.footerWrp>div>ul>li {
+    padding: 5px 0px;
+}
+
+.footerWrp>div>ul>li>a {
+    color: rgb(207, 207, 207);
+}
+
+.footerWrp>div>ul>li>a:hover {
+    color: #fff;
+}
+
+.Connect {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.Connect>div {
+
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+    transition: .3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.contaceIcons {
+    width: 27px;
+    height: 27px;
+}
+
+
+
+.Cfacebook:hover {
+    background: #3b5998;
+}
+
+.Ctwitter:hover {
+    background: #00acee;
+}
+
+.cInsta:hover {
+    background: linear-gradient(to bottom right, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529)
+}
+
+.Cin:hover {
+    background: #0072b1;
+}
+
+.cWhats:hover {
+    background: rgba(37, 211, 102);
+}
+
+.cMail:hover {
+    background: RGB(234, 67, 53);
+}
+
+
+
+.copyRight {
+    border-top: 2px solid rgb(182, 182, 182);
+    grid-column: 1/-1;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: rgb(191, 191, 191);
+}
+
+
+@media (max-width:990px) {
+    .footerWrp {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+
+    }
+}
+
+@media (max-width:768px) {
+    .footerWrp {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .Connect {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .Subscribe {
+        width: 100%;
+    }
+
+    .Connect {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width:330px) {
+    .Connect>div {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contaceIcons {
+        width: 23px;
+        height: 23px;
+        padding: 1px;
+    }
+}
