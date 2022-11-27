@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Meta from "../componnent/Meta";
+import One from "../componnent/One";
 import styles from "../styles/Ragistration.module.css";
 
 
@@ -13,7 +14,7 @@ export default function Ragistration() {
             <h2>Students Registrations</h2>
 
 
-            what is the problems
+            <One />
 
 
             {/* <One /> */}
