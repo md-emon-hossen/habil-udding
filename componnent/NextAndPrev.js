@@ -1,4 +1,4 @@
-import styles from "../styles/nextandprev.module.css";
+import styles from "../styles/NextAndPrev.module.css";
 
 export default function NextAndPrev({ setrander, rander }) {
     function handliIClick(e) {
