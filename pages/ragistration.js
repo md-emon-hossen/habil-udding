@@ -9,7 +9,7 @@ export default function Ragistration() {
     return (
         <form className={styles.RAndAWrp}>
             <h2>Students Registrations</h2>
-            {/* <Prograssber rander={rander} setrander={setrander} /> */}
+            <Prograssber rander={rander} setrander={setrander} />
             {/* {rander === 1 && <One />} */}
             {/* {rander === 2 && <Two />}
             {rander === 3 && <Three />}
