@@ -9,6 +9,14 @@
     display: none;
 }
 
+.link {
+    transition: .3s;
+}
+
+.link:hover {
+    color: red;
+}
+
 @media (max-width:990px) {
 
     .moboNav {
@@ -53,16 +61,8 @@
         cursor: pointer;
     }
 
-    /* .link>{
-        padding-bottom: 20px;
-        font-weight: 500;
-        width: 100%;
-        padding-top: 15px;
-    } */
-
     .link:hover {
         background: rgb(243, 243, 243);
-
     }
 
     .active {

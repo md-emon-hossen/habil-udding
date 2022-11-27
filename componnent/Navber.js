@@ -7,7 +7,6 @@ import styles from "../styles/Navber.module.css";
 export default function Navber() {
 
   const [nav, setNav] = useState(false);
-  console.log(nav);
 
   return <nav className={styles.navberWrp}>
     <div className={styles.moboNav}>

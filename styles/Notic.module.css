@@ -1,0 +1,47 @@
+.noticWrp {
+    width: 100%;
+    display: grid;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(216, 216, 216);
+
+}
+
+.heading>div {
+    padding: 15px 0px;
+    font-weight: 600;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    background: rgb(206, 206, 206);
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.body>div {
+    text-align: center;
+    border: 1px solid rgb(216, 216, 216);
+    display: grid;
+    padding: 15px 0px;
+    align-items: center;
+    color: rgb(125, 125, 125);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: .5fr 2fr 1.4fr .7fr;
+    text-align: center;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: .5fr 2fr 1.4fr .7fr;
+    text-align: center;
+}
+
+.noticWrp>div:hover {
+    background-color: rgb(220, 220, 220);
+}
