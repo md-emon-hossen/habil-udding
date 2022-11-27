@@ -1,3 +1,4 @@
+import Meta from "../componnent/Meta";
 import Notic from "../componnent/Notic";
 import TrandToday from "../componnent/TrandToday";
 import styles from "../styles/Notice.module.css";
