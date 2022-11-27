@@ -13,13 +13,8 @@ export default function Ragistration() {
             <Meta title="Ragistration" name="Ragistration" content='Ragistration' />
             <h2>Students Registrations</h2>
 
-
-            <One />
-
-
-            {/* <One /> */}
             {/* <Prograssber rander={rander} setrander={setrander} /> */}
-            {/* {rander === 1 && <One />} */}
+            {rander === 1 && <One />}
             {/* {rander === 2 && <Two />}
             {rander === 3 && <Three />}
             {rander === 4 && <Four />} */}
