@@ -9,8 +9,6 @@
     display: none;
 }
 
-
-
 @media (max-width:990px) {
 
     .moboNav {
@@ -21,24 +19,30 @@
 
     }
 
-
     .NavItem {
-        display: none;
+        display: flex;
+        justify-content: flex-start;
         flex-direction: column;
         background: #fff;
         color: black;
         z-index: 100;
         position: fixed;
         left: 0;
-        top: 47px;
-        height: 100ch;
+        top: 55px;
+        height: 100vh;
         margin-left: 0px;
         text-align: center;
         width: 30%;
-        padding-top: 10px;
+        padding-top: 20px;
         overflow: scroll;
         cursor: pointer;
+    }
 
+    .link {
+        padding: 20px 0px;
+        font-weight: 500;
+        width: 100%;
+        transition: .3s;
     }
 
     .NavItem::-webkit-scrollbar {
@@ -49,24 +53,22 @@
         cursor: pointer;
     }
 
-    .link>li {
+    /* .link>{
         padding-bottom: 20px;
         font-weight: 500;
         width: 100%;
         padding-top: 15px;
-    }
+    } */
 
-    .link :hover {
+    .link:hover {
         background: rgb(243, 243, 243);
 
     }
 
     .active {
-
-        display: block;
+        display: none;
         animation: fade_in_show .6s ease-in-out;
     }
-
 }
 
 @media (max-width:768px) {
@@ -78,6 +80,7 @@
 @media (max-width:500px) {
     .NavItem {
         width: 43%;
+        top: 65px;
     }
 }
 
