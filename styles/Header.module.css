@@ -24,3 +24,9 @@
         grid-template-columns: 2fr 1fr;
     }
 }
+
+@media (max-width:570px) {
+    .headerWrp {
+        height: 70px;
+    }
+}

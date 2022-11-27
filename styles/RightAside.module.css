@@ -1,11 +1,12 @@
 .rightAsidewrp {
     width: 100%;
     height: fit-content;
+    margin-top: 25px;
 }
 
 
 
-@media (max-width:990px) {
+@media (max-width:1024px) {
     .rightAsidewrp {
         display: grid;
         grid-template-columns: 1fr 1fr;

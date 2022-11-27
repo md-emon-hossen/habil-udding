@@ -1,6 +1,6 @@
+import styles from "../styles/Header.module.css";
 import LogoName from "./LogoName";
 import Navber from "./Navber";
-import styles from "../styles/Header.module.css";
 
 
 export default function Header() {
