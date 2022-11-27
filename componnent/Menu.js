@@ -1,5 +1,5 @@
-import styles from "../styles/Menu.module.css";
 import Link from "next/link";
+import styles from "../styles/Menu.module.css";
 
 export default function Menu() {
     return (
@@ -12,7 +12,7 @@ export default function Menu() {
                 <Link className={styles.link} href='/sylebus'> Syllabus</Link>
                 <Link className={styles.link} href='/examroutine'>Exam Routine</Link>
                 <Link className={styles.link} href='/notice'>Exam Result</Link>
-                <Link className={styles.link} href='/apply'>Online Registration</Link>
+                <Link className={styles.link} href='/ragistration'>Online Registration</Link>
                 <Link className={styles.link} href='/notice'>Exam Admit Card</Link>
                 <Link className={styles.link} href='/notice'>School Cartificate</Link>
                 <Link className={styles.link} href='/login'>Login</Link>
