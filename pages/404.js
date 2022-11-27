@@ -1,9 +1,11 @@
-import Link from "next/link"
-import styles from "../styles/NotFound.module.css"
+import Link from "next/link";
+import Meta from "../componnent/Meta";
+import styles from "../styles/NotFound.module.css";
 
 export default function NotFound() {
     return (
         <div className={styles.notFound}>
+            <Meta title="404 Not Found" name="404 Not Found" content='404 Not Found' />
             <div className={styles.notFoundWrp}>
                 <div>
                     <h2>404 Not Found</h2>

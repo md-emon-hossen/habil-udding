@@ -1,6 +1,6 @@
 import Input from "../componnent/Input";
 import Select from "../componnent/Select";
-import styles from "../styles/one.module.css";
+import styles from "../styles/One.module.css";
 
 export default function One() {
     return (
