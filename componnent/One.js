@@ -2,6 +2,7 @@ import Input from "../componnent/Input";
 import Select from "../componnent/Select";
 import styles from "../styles/One.module.css";
 
+
 export default function One() {
     return (
         <div className={styles.oneWrp}>
