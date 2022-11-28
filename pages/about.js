@@ -1,3 +1,4 @@
+import Loding from "../componnent/Loding";
 import Meta from "../componnent/Meta";
 
 
@@ -9,7 +10,7 @@ export default function About() {
 
 
 
-      <h1>this is about page</h1>
+      <Loding />
     </div>
   )
 }
