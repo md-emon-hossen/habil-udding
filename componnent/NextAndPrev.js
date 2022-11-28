@@ -26,8 +26,8 @@ export default function NextAndPrev({ setrander, rander }) {
 
     return (
         <div className={styles.nextandPrevWrp}>
-            <button disabled={rander === 1} onClick={(e) => handliDClick(e)}>Prev</button>
-            {rander !== 4 ? <button disabled={rander === 4} onClick={(e) => handliIClick(e)}>Next</button> : <button type="submit" disabled={rander === 5} onClick={handleSubmit}>Submit</button>}
+            <button className={styles.button} disabled={rander === 1} onClick={(e) => handliDClick(e)}>Prev</button>
+            {rander !== 4 ? <button className={styles.button} disabled={rander === 4} onClick={(e) => handliIClick(e)}>Next</button> : <button className={styles.button} type="submit" disabled={rander === 5} onClick={handleSubmit}>Submit</button>}
         </div>
     )
 }
