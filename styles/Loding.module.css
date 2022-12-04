@@ -1,63 +1,366 @@
 .loadingWrp {
-    height: 400px;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 200px;
 }
+
+
+.div {
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+
 
 .loader {
-    width: 250px;
-    height: 50px;
-    border: 1px solid #ce4233;
-    line-height: 50px;
-    text-align: center;
+    width: 150px;
+    height: 110px;
+    padding: 0.25em;
+    margin: 40px auto 0;
+    border-radius: 0.25em;
+    box-shadow: 0 0.25em 0.5em hsla(0, 0%, 0%, 0.3), 0 0 0 0.25em hsl(223, 90%, 55%) inset;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    perspective: 37.5em;
+    position: relative;
+}
+
+.wrpDiv,
+.book__pg {
+    width: calc(50% - 0.25em);
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: helvetica, arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #ce4233;
-    letter-spacing: 0.2em;
+    left: 0.25em;
 }
 
-.loader::before,
-.loader::after {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-    background: #ce4233;
-    position: absolute;
-    animation: load .7s infinite alternate ease-in-out;
+.wrpDiv {
+    background-image: linear-gradient(-45deg, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, 0.3) 50%);
+    height: 3.75em;
+    filter: blur(0.25em);
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+    top: calc(100% - 0.25em);
+    animation-name: shadow;
 }
 
-.loader::before {
-    top: 0;
+.loader,
+.wrpDiv,
+.book__pg {
+    animation: cover 7s ease-in-out infinite;
 }
 
-.loader::after {
-    bottom: 0;
+.book__pg {
+    background-color: hsl(223, 10%, 100%);
+    background-image: linear-gradient(90deg, hsla(223, 10%, 90%, 0) 87.5%, hsl(223, 10%, 90%));
+    height: calc(100% - 0.5em);
+    transform-origin: 100% 50%;
+    animation-name: pg1;
 }
 
-@keyframes load {
-    0% {
-        left: 0;
-        height: 30px;
-        width: 15px
+.two,
+.three,
+.four {
+    background-image: repeating-linear-gradient(hsl(223, 10%, 10%) 0 0.125em, hsla(223, 10%, 10%, 0) 0.125em 0.5em),
+        linear-gradient(90deg, hsla(223, 10%, 90%, 0) 87.5%, hsl(223, 10%, 90%));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.5em 4.125em, 100% 100%;
+}
+
+.two {
+    animation-name: pg2;
+
+}
+
+.three {
+    animation-name: pg3;
+}
+
+.four {
+    animation-name: pg4;
+}
+
+.five {
+    animation-name: pg5;
+    background: red;
+}
+
+/* Animations */
+@keyframes cover {
+
+    from,
+    5%,
+    45%,
+    55%,
+    95%,
+    to {
+        background-color: hsl(223, 90%, 65%);
+        animation-timing-function: ease-out;
+    }
+
+    10%,
+    40%,
+    60%,
+    90% {
+        background-color: hsl(223, 90%, 45%);
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes shadow {
+
+    from,
+    10.01%,
+    20.01%,
+    30.01%,
+    40.01% {
+        transform: translate3d(0, 0, 1px) scaleY(0) rotateY(0);
+        animation-timing-function: ease-in;
+    }
+
+    5%,
+    15%,
+    25%,
+    35%,
+    45%,
+    55%,
+    65%,
+    75%,
+    85%,
+    95% {
+        transform: translate3d(0, 0, 1px) scaleY(0.2) rotateY(90deg);
+        animation-timing-function: ease-out;
+    }
+
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    to {
+        transform: translate3d(0, 0, 1px) scaleY(0) rotateY(180deg);
+        animation-timing-function: ease-out;
+    }
+
+    50.01%,
+    60.01%,
+    70.01%,
+    80.01%,
+    90.01% {
+        transform: translate3d(0, 0, 1px) scaleY(0) rotateY(180deg);
+        animation-timing-function: ease-in;
+    }
+
+    60%,
+    70%,
+    80%,
+    90%,
+    to {
+        transform: translate3d(0, 0, 1px) scaleY(0) rotateY(0);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes pg1 {
+
+    from,
+    to {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0.4deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    10%,
+    15% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(180deg);
+        animation-timing-function: ease-out;
+    }
+
+    20%,
+    80% {
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(180deg);
+        animation-timing-function: ease-in;
+    }
+
+    85%,
+    90% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(180deg);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes pg2 {
+
+    from,
+    to {
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(0.3deg);
+        animation-timing-function: ease-in;
+    }
+
+    5%,
+    10% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0.3deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    20%,
+    25% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(179.9deg);
+        animation-timing-function: ease-out;
+    }
+
+    30%,
+    70% {
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(179.9deg);
+        animation-timing-function: ease-in;
+    }
+
+    75%,
+    80% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(179.9deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    90%,
+    95% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0.3deg);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes pg3 {
+
+    from,
+    10%,
+    90%,
+    to {
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(0.2deg);
+        animation-timing-function: ease-in;
+    }
+
+    15%,
+    20% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0.2deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    30%,
+    35% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(179.8deg);
+        animation-timing-function: ease-out;
+    }
+
+    40%,
+    60% {
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(179.8deg);
+        animation-timing-function: ease-in;
+    }
+
+    65%,
+    70% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(179.8deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    80%,
+    85% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0.2deg);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes pg4 {
+
+    from,
+    20%,
+    80%,
+    to {
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(0.1deg);
+        animation-timing-function: ease-in;
+    }
+
+    25%,
+    30% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0.1deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    40%,
+    45% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(179.7deg);
+        animation-timing-function: ease-out;
     }
 
     50% {
-        height: 8px;
-        width: 40px
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(179.7deg);
+        animation-timing-function: ease-in;
     }
 
-    100% {
-        left: 235px;
-        height: 30px;
-        width: 15px
+    55%,
+    60% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(179.7deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    70%,
+    75% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0.1deg);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes pg5 {
+
+    from,
+    30%,
+    70%,
+    to {
+        background-color: hsl(223, 10%, 45%);
+        ;
+        transform: translate3d(0, 0, 1px) rotateY(0);
+        animation-timing-function: ease-in;
+    }
+
+    35%,
+    40% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    50% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(179.6deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    60%,
+    65% {
+        background-color: hsl(223, 10%, 100%);
+        transform: translate3d(0, 0, 1px) rotateY(0);
+        animation-timing-function: ease-out;
     }
 }

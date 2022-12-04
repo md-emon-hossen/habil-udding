@@ -1,8 +1,15 @@
-import '../styles/globals.css';
 import Layout from '../componnent/Layout';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Layout><Component {...pageProps} /></Layout>
+
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />)
+  }
+
+  return < Layout > <Component {...pageProps} /></Layout >;
+
+
 }
 
 export default MyApp

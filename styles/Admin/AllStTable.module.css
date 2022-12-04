@@ -1,0 +1,33 @@
+.table {
+    border: 1px solid rgb(113, 113, 113);
+    width: 95%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.edit {
+    background: rgb(80, 203, 80);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    margin: 2px 5px;
+    border-radius: 7px;
+}
+
+.delete {
+    background: rgb(216, 38, 38);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 2px 5px;
+    width: 25%;
+    border-radius: 7px;
+}
+
+.icons {
+    font-size: 20px;
+}
