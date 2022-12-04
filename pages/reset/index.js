@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/SingleLogin.module.css";
 
-export default function reset() {
+export default function Reset() {
 
     const router = useRouter();
 
     function handleReset() {
-        router.push("reset/varify");
+        router.push("/reset/varify");
     }
     return (
         <div className={styles.loginWRp}>

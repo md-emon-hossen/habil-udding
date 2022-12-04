@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/SingleLogin.module.css";
 
-export default function varify() {
+export default function Varify() {
     const router = useRouter();
     function handleVarify() {
         router.push("/admin");
