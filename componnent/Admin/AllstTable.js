@@ -1,6 +1,6 @@
 import { AiOutlineEdit } from "react-icons/ai";
 import { MdDeleteOutline } from "react-icons/md";
-import styles from "../../styles/Admin/AllstTable.module.css";
+import styles from "../../styles/Admin/AllStTable.module.css";
 
 export default function AllstTable() {
     return (
