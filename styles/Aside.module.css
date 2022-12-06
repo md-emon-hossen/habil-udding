@@ -9,9 +9,11 @@
 
 @media (max-width:768px) {
     .asideWer {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
+
     }
 }
 
@@ -19,7 +21,5 @@
 @media (max-width:550px) {
     .asideWer {
         width: 100%;
-        margin-left: -10px;
-
     }
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/ImportantLink.module.css";
 
 
@@ -5,17 +6,16 @@ export default function ImportantLink() {
     return (
         <div className={styles.inportamtLinkWrp}>
             <div className={styles.mainiiiTitle}>
-                <h4>importants Notice</h4>
+                <h4 className={styles.h4}>importants Notice</h4>
             </div>
             <div className={styles.importantsLink}>
-                <ul>
-                    <li><a href="#">State of Prime Minister</a></li>
-                    <li><a href="#">Education Board Result</a></li>
-                    <li><a href="#">Teacher Station</a></li>
-                    <li><a href="#">Education Board Result</a></li>
-                    <li><a href="#">Teacher Station</a></li>
-                </ul>
+                <Link className={styles.link} href='/'>State of Prime Minister</Link>
+                <Link className={styles.link} href='/'>Education Board Result</Link>
+                <Link className={styles.link} href='/'>Teacher Station</Link>
+                <Link className={styles.link} href='/'>Education Board Result</Link>
+                <Link className={styles.link} href='/'>State of Prime Minister</Link>
             </div>
         </div>
     )
 }
+

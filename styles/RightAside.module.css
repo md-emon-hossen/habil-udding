@@ -21,16 +21,15 @@
 
 @media (max-width:768px) {
     .rightAsidewrp {
-        width: 97%;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
+        margin-left: 0px;
     }
 }
 
 @media (max-width:550px) {
     .rightAsidewrp {
         width: 100%;
-        margin-left: 10px;
-
     }
 }

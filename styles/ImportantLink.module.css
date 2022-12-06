@@ -7,33 +7,39 @@
 
 .mainiiiTitle {
     background: tomato;
-    color: #fff;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 90%;
-    height: 30px;
-    padding-top: 5px;
-    margin-left: auto;
-    margin-top: 10px !important;
-    margin-right: auto;
-    text-align: center;
-
-
-
-}
-
-.importantsLink {
-    width: 90%;
+    height: fit-content;
     margin: auto;
+    margin-bottom: 20px;
+    /* padding: 5px; */
 }
 
-.importantsLink ul li {
-    list-style: none;
+.h4 {
+    color: black;
+    text-align: center;
+    font-size: 18px;
     padding: 5px;
 }
 
-.importantsLink ul li:hover {
-    background: rgb(238, 238, 238);
+.importantsLink {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.link {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.link:hover {
+    background: rgb(243, 243, 243);
+
 }
 
 @media (max-width:990px) {
