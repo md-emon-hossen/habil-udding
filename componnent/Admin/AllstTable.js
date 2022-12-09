@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Loding from "../../componnent/Loding";
-import styles from "../../styles/Admin/AllstTable.module.css";
+import styles from "../../styles/Admin/AllStTable.module.css";
 
 export default function AllstTable({ data }) {
 
