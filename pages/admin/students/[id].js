@@ -27,24 +27,24 @@ export default function Index({ data }) {
                     <div className={styles.details}><b>Residence :</b>45</div>
                     <div className={styles.details}><b>Quata :</b> Md Shahin Alam</div>
                     <div className={styles.details}><b>Blood Group :</b> Yesmin Akter</div>
-                    <div className={styles.details}><b>Fahter' Occupation :</b> 0198740986</div>
-                    <div className={styles.details}><b>Mother's Occupation :</b> 0198740986</div>
+                    <div className={styles.details}><b>Fahter Occupation :</b> 0198740986</div>
+                    <div className={styles.details}><b>Mother Occupation :</b> 0198740986</div>
                 </div>
                 <div>
-                    <div className={styles.details}><b>Father's Monthly Income :</b> Md Emon Hossem</div>
-                    <div className={styles.details}><b>Mother's Monthly Income: </b>	অভিজিৎ</div>
-                    <div className={styles.details}><b>Father's Phone Number :</b>45</div>
-                    <div className={styles.details}><b>Mother's Phone Number :</b> Md Shahin Alam</div>
-                    <div className={styles.details}><b>Father's Email :</b> Yesmin Akter</div>
-                    <div className={styles.details}><b>Mother's Email :</b> 0198740986</div>
+                    <div className={styles.details}><b>Father Monthly Income :</b> Md Emon Hossem</div>
+                    <div className={styles.details}><b>Mother Monthly Income: </b>	অভিজিৎ</div>
+                    <div className={styles.details}><b>Father Phone Number :</b>45</div>
+                    <div className={styles.details}><b>Mother Phone Number :</b> Md Shahin Alam</div>
+                    <div className={styles.details}><b>Father Email :</b> Yesmin Akter</div>
+                    <div className={styles.details}><b>Mother Email :</b> 0198740986</div>
                     <div className={styles.details}><b>Country :</b> Bangladesh</div>
                 </div>
                 <div>
                     <div className={styles.details}><b>Name(English) :</b> Md Emon Hossem</div>
                     <div className={styles.details}><b>Name(Bangla) : </b>	অভিজিৎ</div>
                     <div className={styles.details}><b>Roll :</b>45</div>
-                    <div className={styles.details}><b>Father's Name :</b> Md Shahin Alam</div>
-                    <div className={styles.details}><b>Mother's Name :</b> Yesmin Akter</div>
+                    <div className={styles.details}><b>Father Name :</b> Md Shahin Alam</div>
+                    <div className={styles.details}><b>Mother Name :</b> Yesmin Akter</div>
                     <div className={styles.details}><b>Student Contact :</b> 0198740986</div>
                     <div className={styles.details}><b>Student Contact :</b> 0198740986</div>
                 </div>
