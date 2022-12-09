@@ -9,7 +9,7 @@ export default function Index({ data }) {
         <div className={styles.SingleWrper}>
             <div className={styles.upprofile}>
                 <div className={styles.profile}>
-                    <Image className={styles.img} src={profile} />
+                    <Image className={styles.img} src={profile} alt="single Profile" />
                 </div>
                 <div className={styles.topDetails}>
                     <div><b>Name(English) :</b> {data.name}</div>
