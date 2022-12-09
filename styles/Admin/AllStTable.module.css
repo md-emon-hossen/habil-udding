@@ -2,32 +2,43 @@
     border: 1px solid rgb(113, 113, 113);
     width: 95%;
     margin: auto;
+}
+
+.thead {
+    background: rgb(199, 199, 199);
+    width: 100%;
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: .5fr .6fr 1fr 1.2fr .7fr .7fr 1fr 1fr 1fr;
+}
+
+.headdiv {
+    border: .5px solid black;
+    height: 100%;
     text-align: center;
-
-}
-
-.edit {
-    background: rgb(80, 203, 80);
-    color: #fff;
     padding: 5px;
-    border: none;
-    cursor: pointer;
-    width: 25%;
-    margin: 2px 5px;
-    border-radius: 7px;
+    align-items: center;
+    font-size: 18px;
 }
 
-.delete {
-    background: rgb(216, 38, 38);
-    color: #fff;
+.bodydiv {
+    border: .5px solid black;
+    height: 100%;
+    text-align: center;
     padding: 5px;
-    border: none;
-    cursor: pointer;
-    margin: 2px 5px;
-    width: 25%;
-    border-radius: 7px;
+    align-items: center;
+    color: rgb(75, 75, 75);
 }
 
-.icons {
-    font-size: 20px;
+.tbody {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: .5fr .6fr 1fr 1.2fr .7fr .7fr 1fr 1fr 1fr;
+    transition: 1s;
+}
+
+.tbody:hover {
+    background: rgb(200, 200, 200);
 }

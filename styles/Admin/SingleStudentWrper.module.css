@@ -1,0 +1,57 @@
+.SingleWrper {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin: 25px 20px;
+    background: #fff;
+    border-radius: 10px;
+
+}
+
+.upprofile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+
+
+.profile {
+    width: 170px;
+    margin: auto;
+    height: 170px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 50%;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.topDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.topDetails>div {
+    height: fit-content;
+    padding: 17px 0px;
+}
+
+.downDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 30px;
+    grid-template-rows: auto;
+}
+
+.details {
+    padding: 20px 0px;
+}

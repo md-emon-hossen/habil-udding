@@ -1,54 +1,48 @@
-import { AiOutlineEdit } from "react-icons/ai";
-import { MdDeleteOutline } from "react-icons/md";
-import styles from "../../styles/Admin/AllStTable.module.css";
+import Link from "next/link";
+import Loding from "../../componnent/Loding";
+import styles from "../../styles/Admin/AllstTable.module.css";
 
-export default function AllstTable() {
+export default function AllstTable({ data }) {
+
+
     return (
-        <table className={styles.table} border='1'>
-            <tr>
-                <td>SL</td>
-                <td>Name</td>
-                <td>hhgf</td>
-                <td>SL</td>
-                <td>Name</td>
-                <td>hhgf</td>
-                <td>SL</td>
-                <td>Name</td>
-                <td>Action</td>
-            </tr>
-            <tr>
-                <td>SL</td>
-                <td>Name</td>
-                <td>hhgf</td>
-                <td>SL</td>
-                <td>Name</td>
-                <td>hhgf</td>
-                <td>SL</td>
-                <td>Name</td>
-                <td>
-                    <button className={styles.edit}><AiOutlineEdit className={styles.icons} /></button>
-                    <button className={styles.delete}><MdDeleteOutline className={styles.icons} /></button>
-                </td>
-            </tr>
+        <>
+            {
+                data ? <div className={styles.table
+                } >
+                    <div className={styles.thead}>
+                        <td className={styles.headdiv}>SL</td>
+                        <td className={styles.headdiv}>Id</td>
+                        <td className={styles.headdiv}> Name</td >
+                        <td className={styles.headdiv}>Father's Name</td>
+                        <td className={styles.bodydiv}>Mother's Name</td>
+                        <td className={styles.headdiv}>Class</td>
+                        <td className={styles.headdiv}>Roll</td>
+                        <td className={styles.headdiv}>Catagory</td>
+                        <td className={styles.headdiv}>Payment Status</td>
+                    </div >
+
+                    {
+                        data.map((item, index) => {
+                            return <Link key={item._id} className={styles.tbody} href={`/admin/students/${item._id}`} passHref>
+                                <td className={styles.bodydiv}>{index + 1}</td>
+                                <td className={styles.bodydiv}>Id</td>
+                                <td className={styles.bodydiv}>{item.name}</td>
+                                <td className={styles.bodydiv}>Father's Name</td>
+                                <td className={styles.bodydiv}>Mother's Name</td>
+                                <td className={styles.bodydiv}>Class</td>
+                                <td className={styles.bodydiv}>Roll</td>
+                                <td className={styles.bodydiv}>Catagory</td>
+                                <td className={styles.bodydiv}>Payment Status</td>
+                            </Link>
+                        })
+                    }
 
 
+                </div > : <Loding />
 
-            <tr>
-                <td>SL</td>
-                <td>Name</td>
-                <td>hhgf</td>
-                <td>SL</td>
-                <td>Name</td>
-                <td>hhgf</td>
-                <td>SL</td>
-                <td>Name</td>
-                <td>
-                    <button className={styles.edit}><AiOutlineEdit className={styles.icons} /></button>
-                    <button className={styles.delete}><MdDeleteOutline className={styles.icons} /></button>
-                </td>
-            </tr>
+            }
 
-
-        </table>
+        </>
     )
 }

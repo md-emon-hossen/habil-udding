@@ -22,7 +22,7 @@ export default function Aside() {
             <div className={styles.Wrp}>
                 <Link className={styles.link} href='/admin'> <GoDashboard className={styles.icons} /> Deshboard</Link>
 
-                <NestedMenu contolValue={sNested} updateControllValue={setsNested} title="Students" icon={<FaUserGraduate className={styles.icons} />} value={["Panding Students", 'All Students']} length="2" destination={["/admin/students/pandingstudent", "/admin/students/allstudents"]} />
+                <NestedMenu contolValue={sNested} updateControllValue={setsNested} title="Students" icon={<FaUserGraduate className={styles.icons} />} value={["Panding Students", 'All Students']} length="2" destination={["/admin/students/pandingstudent", "/admin/students"]} />
 
 
                 <NestedMenu contolValue={tNested} updateControllValue={settNested} title="Teachers" icon={<HiUserGroup className={styles.icons} />} value={["All Teachers", 'Add Teacher', 'Payments']} length="3" destination={["admin/students/allstudents", "admin/students/pandingstudents"]} />

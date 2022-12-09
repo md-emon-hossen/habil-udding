@@ -27,7 +27,6 @@
 .profile {
     width: 130px;
     height: 150px;
-    margin: auto !important;
 }
 
 .headTeacherImg {
@@ -53,9 +52,25 @@
     text-align: center;
 }
 
+
+
 @media (max-width:990px) {
     .profilewrp {
         margin-top: -10px;
         margin-bottom: 0px;
+    }
+}
+
+@media (min-width:990px) {
+    .headTImg {
+        width: 120px;
+        margin: auto;
+    }
+
+
+    .profile {
+        width: 120px;
+        height: 120px;
+        margin: auto;
     }
 }

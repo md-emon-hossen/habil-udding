@@ -3,9 +3,9 @@ import Layout from "../../componnent/Admin/Layout";
 export default function Admin() {
     return (
 
-        <section>
+        <div>
             <h1>Admin Dashboard</h1>
-        </section>
+        </div>
     )
 }
 
