@@ -2,12 +2,11 @@ import { Student } from "../../mongoDB/models/models";
 
 export default async function postController(req, res) {
 
-    const { name, age } = req.body;
-    const formData = { name, age };
+    const fromData = req.body;
 
-    await Student.create(formData, (err) => {
+    await Student.create(fromData, (err) => {
         if (!err) {
-            res.status(200).json({ messege: "Student Added Successfully" });
+            res.status(200).json({ messege: "Apply Finiesd Successfully" });
         } else {
             res.status(500).json({ error: "There was a server side problem" });
         }

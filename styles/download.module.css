@@ -1,0 +1,31 @@
+.downloadWrp {
+    border: 1px solid rgb(150, 150, 150);
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.downloadWrp>a {
+    background: rgb(29, 196, 29);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+    align-items: center;
+    display: flex;
+    width: 120px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    padding-right: 5px;
+    font-size: 20px;
+
+}

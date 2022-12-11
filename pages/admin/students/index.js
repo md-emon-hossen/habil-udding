@@ -4,6 +4,7 @@ import styles from "../../../styles/Admin/Allstudents.module.css";
 
 
 export default function Allstudents({ data }) {
+
     return (
 
         <div>
@@ -26,7 +27,7 @@ Allstudents.getLayout = function getLayout(page) {
 
 export async function getServerSideProps(context) {
 
-    const res = await fetch(`${process.env.BASE_URL}/api/students`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/students`);
     const data = await res.json();
 
     return {

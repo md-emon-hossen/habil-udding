@@ -27,13 +27,14 @@ export default function AllstTable({ data }) {
                             return <Link key={item._id} className={styles.tbody} href={`/admin/students/${item._id}`} passHref>
                                 <td className={styles.bodydiv}>{index + 1}</td>
                                 <td className={styles.bodydiv}>Id</td>
-                                <td className={styles.bodydiv}>{item.name}</td>
-                                <td className={styles.bodydiv}>Father's Name</td>
-                                <td className={styles.bodydiv}>Mother's Name</td>
-                                <td className={styles.bodydiv}>Class</td>
-                                <td className={styles.bodydiv}>Roll</td>
-                                <td className={styles.bodydiv}>Catagory</td>
-                                <td className={styles.bodydiv}>Payment Status</td>
+                                <td className={styles.bodydiv}>{item.fName}</td>
+                                <td className={styles.bodydiv}>{item.faterName}</td>
+                                <td className={styles.bodydiv}>{item.moterName
+                                }</td>
+                                <td className={styles.bodydiv}>{item.wadmit}</td>
+                                <td className={styles.bodydiv}></td>
+                                <td className={styles.bodydiv}>{item.status}</td>
+                                <td className={styles.bodydiv}>{item.status}</td>
                             </Link>
                         })
                     }

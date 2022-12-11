@@ -12,32 +12,32 @@ export default function Index({ data }) {
                     <Image className={styles.img} src={profile} alt="single Profile" />
                 </div>
                 <div className={styles.topDetails}>
-                    <div><b>Name(English) :</b> {data.name}</div>
-                    <div><b>Name(Bangla) : </b>	অভিজিৎ</div>
+                    <div><b>Name(English) :</b> {data.fName}</div>
+                    <div><b>Name(Bangla) : </b>	{data.bName}</div>
                     <div><b>Roll :</b>45</div>
-                    <div><b>Class :</b> 9</div>
+                    <div><b>Class :</b>{data.wadmit}</div>
                     <div><b>Id :</b> 2671</div>
-                    <div><b>Age :</b> {data.age}</div>
+                    <div><b>Age :</b> {data.wadmit}</div>
                 </div>
             </div>
             <div className={styles.downDetails}>
                 <div>
-                    <div className={styles.details}><b>Religion :</b> Md Emon Hossem</div>
-                    <div className={styles.details}><b>Brith Reg. Number : </b>	অভিজিৎ</div>
-                    <div className={styles.details}><b>Residence :</b>45</div>
-                    <div className={styles.details}><b>Quata :</b> Md Shahin Alam</div>
-                    <div className={styles.details}><b>Blood Group :</b> Yesmin Akter</div>
-                    <div className={styles.details}><b>Fahter Occupation :</b> 0198740986</div>
-                    <div className={styles.details}><b>Mother Occupation :</b> 0198740986</div>
+                    <div className={styles.details}><b>Religion :</b> {data.religion}</div>
+                    <div className={styles.details}><b>Brith Reg. Number : </b>	{data.brithregi}</div>
+                    <div className={styles.details}><b>Residence :</b>{data.residance}</div>
+                    <div className={styles.details}><b>Quata :</b> {data.quata}</div>
+                    <div className={styles.details}><b>Blood Group :</b> {data.bloodGroup}</div>
+                    <div className={styles.details}><b>Fahter Occupation :</b>{data.fOccupation}</div>
+                    <div className={styles.details}><b>Mother Occupation :</b>{data.mOccupation}</div>
                 </div>
                 <div>
-                    <div className={styles.details}><b>Father Monthly Income :</b> Md Emon Hossem</div>
-                    <div className={styles.details}><b>Mother Monthly Income: </b>	অভিজিৎ</div>
-                    <div className={styles.details}><b>Father Phone Number :</b>45</div>
-                    <div className={styles.details}><b>Mother Phone Number :</b> Md Shahin Alam</div>
-                    <div className={styles.details}><b>Father Email :</b> Yesmin Akter</div>
-                    <div className={styles.details}><b>Mother Email :</b> 0198740986</div>
-                    <div className={styles.details}><b>Country :</b> Bangladesh</div>
+                    <div className={styles.details}><b>Father Monthly Income :</b>{data.fmIncome}</div>
+                    <div className={styles.details}><b>Mother Monthly Income: </b>{data.mmIncome}</div>
+                    <div className={styles.details}><b>Father Phone Number :</b>{data.fpNumber}</div>
+                    <div className={styles.details}><b>Mother Phone Number :</b>{data.mpNumber}</div>
+                    <div className={styles.details}><b>Father Email :</b> {data.fEmail}</div>
+                    <div className={styles.details}><b>Mother Email :</b>{data.mEmail}</div>
+                    <div className={styles.details}><b>Country :</b></div>
                 </div>
                 <div>
                     <div className={styles.details}><b>Name(English) :</b> Md Emon Hossem</div>
@@ -63,7 +63,7 @@ Index.getLayout = function getLayout(page) {
 
 export async function getServerSideProps(context) {
 
-    const res = await fetch(`${process.env.BASE_URL}/api/students/${context.params.id}`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/students/${context.params.id}`);
     const data = await res.json();
 
     return {

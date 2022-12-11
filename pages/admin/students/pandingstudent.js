@@ -10,6 +10,9 @@ export default function PaddingStudents() {
                 <h1> Padding Students</h1>
                 <input placeholder="Search" className={styles.input} type='search' />
             </div>
+
+
+
         </div>
     )
 }
