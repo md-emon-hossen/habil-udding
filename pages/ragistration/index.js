@@ -9,7 +9,7 @@ import Two from "../../componnent/Two";
 import { FromProvider } from "../../context/fromContext";
 import styles from "../../styles/Ragistration.module.css";
 
-export default function index() {
+export default function Index() {
 
     const [rander, setrander] = useState(1);
 
