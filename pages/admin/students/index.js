@@ -5,6 +5,8 @@ import styles from "../../../styles/Admin/Allstudents.module.css";
 
 export default function Allstudents({ data }) {
 
+    console.log(data);
+
     return (
 
         <div>
