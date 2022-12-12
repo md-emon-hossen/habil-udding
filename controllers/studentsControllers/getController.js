@@ -10,5 +10,5 @@ export default async function getController(req, res) {
         } else {
             res.status(500).json({ error: "There was a server side problem" });
         }
-    });
+    }).clone();
 }

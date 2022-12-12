@@ -9,5 +9,5 @@ export default async function getPending(req, res) {
         } else {
             res.status(500).json({ error: "There was a server side problem" });
         }
-    })
+    }).clone();
 }
