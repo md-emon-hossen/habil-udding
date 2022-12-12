@@ -184,7 +184,6 @@ export default function NextAndPrev({ setrander, rander }) {
 
     async function handleSubmit(e) {
         e.preventDefault();
-        console.log("click");
         setloding(true);
         const res = await fetch("/api/students", {
             method: "POST",
@@ -199,6 +198,7 @@ export default function NextAndPrev({ setrander, rander }) {
         setres(resposns);
         console.log(res);
         setloding(false);
+        router.push("/");
 
 
     }

@@ -1,4 +1,4 @@
-.table {
+.pandingTableWrp {
     border: 1px solid rgb(162, 162, 162);
     width: 95%;
     margin: auto;
@@ -9,7 +9,7 @@
     width: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: .5fr .6fr 1fr 1.2fr .7fr .7fr 1fr 1fr 1fr;
+    grid-template-columns: .3fr .4fr 1fr 1fr 1fr 1.3fr;
 }
 
 .headdiv {
@@ -34,10 +34,32 @@
     width: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: .5fr .6fr 1fr 1.2fr .7fr .7fr 1fr 1fr 1fr;
+    grid-template-columns: .3fr .4fr 1fr 1fr 1fr 1.3fr;
     transition: 1s;
 }
 
 .tbody:hover {
     background: rgb(200, 200, 200);
+}
+
+.btnWrp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    color: #fff;
+    width: 30%;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cencle {
+    background: red;
+}
+
+.add {
+    background: rgb(39, 217, 39);
 }

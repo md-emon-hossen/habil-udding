@@ -5,11 +5,9 @@ import styles from "../../../styles/Admin/Allstudents.module.css";
 
 export default function Allstudents({ data }) {
 
-    console.log(data);
-
     return (
 
-        <div>
+        <div className={styles.Swrp}>
             <div className={styles.tableHeader}>
                 <h1> All Students</h1>
                 <input placeholder="Search" className={styles.input} type='search' />

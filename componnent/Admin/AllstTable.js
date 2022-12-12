@@ -15,7 +15,7 @@ export default function AllstTable({ data }) {
                         <td className={styles.headdiv}>Id</td>
                         <td className={styles.headdiv}> Name</td >
                         <td className={styles.headdiv}>Father's Name</td>
-                        <td className={styles.bodydiv}>Mother's Name</td>
+                        <td className={styles.headdiv}>Mother's Name</td>
                         <td className={styles.headdiv}>Class</td>
                         <td className={styles.headdiv}>Roll</td>
                         <td className={styles.headdiv}>Catagory</td>
