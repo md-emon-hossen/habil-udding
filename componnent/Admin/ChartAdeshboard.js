@@ -15,7 +15,7 @@ export default function ChartAdeshboard() {
                 <div>Expense : <div className={styles.tooltipred}> </div> </div>
             </div>
             <div>
-                <LineChart width={1150} height={300} data={data}>
+                <LineChart width={950} height={300} data={data}>
                     <Line type="monotone" dataKey="pv" stroke="green" />
                     <Line type="monotone" dataKey="uv" stroke="red" />
                     <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
