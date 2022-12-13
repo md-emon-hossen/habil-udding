@@ -11,6 +11,15 @@ export default function Payments() {
             </div>
 
             <Payment />
+
+            <div className={styles.paymentBtn}>
+                <div>
+                    <button className={styles.makePayemtn}>Make Payment</button>
+                </div>
+                <div className={styles.filed}>
+                    Total =
+                </div>
+            </div>
         </div>
     )
 }
