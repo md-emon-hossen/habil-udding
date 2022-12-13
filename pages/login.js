@@ -8,7 +8,7 @@ export default function Login() {
         <div>
             <Meta title="Login Page" name="Login Page" content='Login page' />
             <div className={styles.singlelogin}>
-                <SingleLogin title="Student Login" fildTwo='Password' FildOne='Email' buttonTitle="Login" />
+                <SingleLogin title="Login" fildTwo='Password' FildOne='Email' buttonTitle="Login" />
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ export default function Reset() {
     const router = useRouter();
 
     function handleReset() {
-        router.push("/reset/varify");
+        window.alert("Email Check");
     }
     return (
         <div className={styles.loginWRp}>

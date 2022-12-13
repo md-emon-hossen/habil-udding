@@ -3,7 +3,7 @@ import styles from "../styles/Menu.module.css";
 
 export default function Menu() {
     return (
-        <div class={styles.menuWrp}>
+        <div className={styles.menuWrp}>
             <h3>Menu</h3>
             <div className={styles.div}>
                 <Link className={styles.link} href='/'>Home</Link>

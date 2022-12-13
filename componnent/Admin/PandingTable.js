@@ -2,18 +2,17 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "../../styles/Admin/PandingTable.module.css";
 
-export default function PandingTable({ Data }) {
+export default function PandingTable({ Data, setloading, loading }) {
 
     const [res, setres] = useState('');
-    const [loding, setloding] = useState(false);
+
 
     const router = useRouter();
 
 
     async function handleAdd(e, id) {
         e.preventDefault();
-        console.log(res);
-        setloding(true);
+        setloading(true);
         const respons = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/students/panding`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
@@ -22,7 +21,7 @@ export default function PandingTable({ Data }) {
 
         const respond = respons.json();
         setres(respond);
-        setloding(false);
+        setloading(false);
         router.push("/admin/students");
 
     }
@@ -31,7 +30,7 @@ export default function PandingTable({ Data }) {
     async function handleCencle(e, id) {
         e.preventDefault();
         console.log(res);
-        setloding(true);
+        setloading(true);
 
         const respons = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/students/panding`, {
             method: 'DELETE',
@@ -40,7 +39,7 @@ export default function PandingTable({ Data }) {
         })
         const respond = respons.json();
         setres(respond);
-        setloding(false);
+        setloading(false);
         window.location.reload();
     }
 
@@ -68,8 +67,8 @@ export default function PandingTable({ Data }) {
                         <td className={styles.bodydiv}>{item.faterName}</td>
                         <td className={styles.bodydiv}>{item.moterName}</td>
                         <td className={`${styles.bodydiv} ${styles.btnWrp}`}>
-                            <button disabled={loding} onClick={(e) => handleCencle(e, item._id)} className={`${styles.button} ${styles.cencle}`}>Cencle</button>
-                            <button disabled={loding} onClick={(e) => handleAdd(e, item._id)} className={`${styles.button} ${styles.add}`}>Add</button>
+                            <button disabled={loading} onClick={(e) => handleCencle(e, item._id)} className={`${styles.button} ${styles.cencle}`}>Cencle</button>
+                            <button disabled={loading} onClick={(e) => handleAdd(e, item._id)} className={`${styles.button} ${styles.add}`}>Add</button>
                         </td>
                     </div>
                 })

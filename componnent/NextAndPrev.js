@@ -3,11 +3,11 @@ import { useState } from "react";
 import { UseFrom } from "../context/fromContext";
 import styles from "../styles/NextAndPrev.module.css";
 
-export default function NextAndPrev({ setrander, rander }) {
+export default function NextAndPrev({ setrander, rander, loding, setloding }) {
 
     const router = useRouter();
     const [res, setres] = useState();
-    const [loding, setloding] = useState(false);
+
 
     const { fName,
         setfName,
@@ -200,9 +200,7 @@ export default function NextAndPrev({ setrander, rander }) {
         setloding(false);
         router.push("/");
 
-
     }
-
 
 
     return (
@@ -211,4 +209,5 @@ export default function NextAndPrev({ setrander, rander }) {
             {rander !== 4 ? <button className={styles.button} disabled={rander === 4} onClick={(e) => handliIClick(e)}>Next</button> : <button className={styles.button} type="submit" disabled={loding} onClick={(e) => handleSubmit(e)}>Submit</button>}
         </div>
     )
+
 }
