@@ -1,16 +1,32 @@
+import { useState } from "react";
 import Layout from "../../../componnent/Admin/Layout";
 import Payment from "../../../componnent/Admin/Payment";
 import styles from "../../../styles/Admin/Payments.module.css";
 
 export default function Payments() {
+
+    const [idField, setidFiled] = useState('');
+    const [respon, setrespon] = useState('');
+
+
+    async function handlekeyDown(e) {
+        if (e.key === "Enter") {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/students/payment/${idField}`);
+            const responed = await res.json();
+            setrespon(responed);
+        }
+    }
+
+
+
     return (
         <div className={styles.paymentsWrp}>
             <div className={styles.tableHeader}>
                 <h1>Make Payment to Student</h1>
-                <input placeholder="Search" className={styles.input} type='search' />
+                <input onKeyDown={(e) => handlekeyDown(e)} onChange={(e) => setidFiled(e.target.value)} placeholder="Search" className={styles.input} type='search' />
             </div>
 
-            <Payment />
+            <Payment data={respon} />
 
             <div className={styles.paymentBtn}>
                 <div>

@@ -1,3 +1,7 @@
+
+
+
+
 // student schema
 export const sSchema = {
 
@@ -44,6 +48,9 @@ export const sSchema = {
     psUnion: String,
     psUpazila: String,
     psVillagem: String,
+    customid: String,
+
+
 
 
     //aditional info add from here
@@ -51,6 +58,7 @@ export const sSchema = {
         default: false,
         type: Boolean,
     },
+
 
 }
 

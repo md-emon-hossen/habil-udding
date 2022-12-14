@@ -1,3 +1,4 @@
+import { customAlphabet } from "nanoid";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { UseFrom } from "../context/fromContext";
@@ -7,6 +8,8 @@ export default function NextAndPrev({ setrander, rander, loding, setloding }) {
 
     const router = useRouter();
     const [res, setres] = useState();
+
+    const customid = customAlphabet("1234567890", 5)
 
 
     const { fName,
@@ -160,6 +163,8 @@ export default function NextAndPrev({ setrander, rander, loding, setloding }) {
 
         photo,
 
+        customid: customid()
+
     }
 
 
@@ -183,6 +188,8 @@ export default function NextAndPrev({ setrander, rander, loding, setloding }) {
     }
 
     async function handleSubmit(e) {
+
+        console.log(from_data);
         e.preventDefault();
         setloding(true);
         const res = await fetch("/api/students", {

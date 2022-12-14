@@ -62,7 +62,7 @@ export default function PandingTable({ Data, setloading, loading }) {
                 Data.map((item, index) => {
                     return <div className={styles.tbody}>
                         <td className={styles.bodydiv}>{index + 1}</td>
-                        <td className={styles.bodydiv}>Id</td>
+                        <td className={styles.bodydiv}>{item.customid}</td>
                         <td className={styles.bodydiv}>{item.fName}</td>
                         <td className={styles.bodydiv}>{item.faterName}</td>
                         <td className={styles.bodydiv}>{item.moterName}</td>

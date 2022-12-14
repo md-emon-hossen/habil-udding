@@ -1,10 +1,16 @@
+
 import { useState } from "react";
+import { TiTick } from "react-icons/ti";
 import styles from "../../styles/Admin/Payment.module.css";
 import PaymentInput from "./PaymentInput";
 
-export default function Payment() {
+export default function Payment({ data }) {
+
+
 
     const [add, setadd] = useState(1);
+    const [tickController, settickController] = useState(false);
+
 
     function handleAdd() {
         setadd((prev) => {
@@ -24,6 +30,7 @@ export default function Payment() {
         item.push(<PaymentInput />)
     }
 
+
     return (
         <div className={styles.paymentWrp}>
             <div>
@@ -31,16 +38,18 @@ export default function Payment() {
                     <div className={styles.corospondingStudent}>
                         <div>Id</div>
                         <div>Name</div>
-                        <div>Father Name</div>
                         <div>Class</div>
                         <div>Due</div>
+                        <div>Add To Payment</div>
                     </div>
                     <div className={styles.corospondingStudent}>
+                        <div>{data && data[0].customid}</div>
+                        <div>{data && data[0].fName}</div>
+                        <div>{data && data[0].faterName}</div>
                         <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div>
+                            {data && <button onClick={() => settickController(!tickController)} className={`${styles.addTickWrp} ${tickController && styles.addTickController}`}><TiTick className={styles.addTick} /></button>}
+                        </div>
                     </div>
                 </div>
             </div>

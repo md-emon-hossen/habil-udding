@@ -42,3 +42,16 @@
     align-items: center;
     justify-content: center;
 }
+
+.addTickWrp {
+    cursor: pointer;
+}
+
+.addTickController {
+    background: rgb(14, 240, 14);
+    color: #fff;
+}
+
+.addTick {
+    font-size: 19px;
+}
