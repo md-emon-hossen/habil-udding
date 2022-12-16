@@ -1,11 +1,69 @@
+import { useState } from "react";
 import styles from "../../styles/Admin/PaymentInput.module.css";
 
-export default function PaymentInput() {
+export default function PaymentInput({ sId }) {
+
+    const [nameforone, setnameforone] = useState({ quentity: 1, value: 700, name: "" });
+    const [namefortwo, setnamefortwo] = useState({ quentity: 1, value: 700, name: "" });
+    const [nameforthree, setnameforthree] = useState({ quentity: 1, value: 700, name: "" });
+
+    function handleSelete(e) {
+
+        const cname = e.target.name;
+        const nameValue = e.target.value;
+
+        switch (cname) {
+            case "1":
+                setnameforone({ ...nameforone, name: nameValue })
+                break;
+            case "2":
+                setnamefortwo({ ...namefortwo, name: nameValue })
+                break;
+            case "3":
+                setnameforthree({ ...nameforthree, name: nameValue })
+                break;
+
+            default:
+                console.log("unknown");
+                break;
+        }
+
+
+    }
+
+
+    function handleChangleforValue(e) {
+
+        const cname = e.target.name;
+        const nameValue = e.target.value;
+
+        switch (cname) {
+            case "1":
+                setnameforone({ ...nameforone, quentity: nameValue })
+                break;
+            case "2":
+                setnamefortwo({ ...namefortwo, quentity: nameValue })
+                break;
+            case "3":
+                setnameforthree({ ...nameforthree, quentity: nameValue })
+                break;
+
+            default:
+                console.log("unknown");
+                break;
+        }
+
+
+    }
+
+
+
+
     return (
         <div className={styles.paymentInputWrp} >
             <div className={styles.paymentFiledWrper}>
                 <div>
-                    <select className={styles.filed}>
+                    <select onChange={(e) => handleSelete(e)} name={sId} className={styles.filed}>
                         <option className={styles.option}>Selete one</option>
                         <option className={styles.option}>Monthly Fee</option>
                         <option className={styles.option}>Exam Fee</option>
@@ -35,13 +93,13 @@ export default function PaymentInput() {
                     </select>
                 </div>
                 <div>
-                    <input className={styles.filed} type="Number" />
+                    <input name={sId} onChange={(e) => handleChangleforValue(e)} className={styles.filed} type="Number" />
                 </div>
-                <div>
-                    <input className={styles.filed} type="Number" />
+                <div className={styles.filed}>
+
                 </div>
-                <div>
-                    <input className={styles.filed} type="Number" />
+                <div className={styles.filed}>
+
                 </div>
             </div>
         </div>

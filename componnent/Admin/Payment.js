@@ -1,15 +1,12 @@
-
 import { useState } from "react";
 import { TiTick } from "react-icons/ti";
+import PaymentInputWrp from "../../componnent/Admin/PaymentInputWrp";
 import styles from "../../styles/Admin/Payment.module.css";
-import PaymentInput from "./PaymentInput";
 
 export default function Payment({ data }) {
-
-
-
     const [add, setadd] = useState(1);
     const [tickController, settickController] = useState(false);
+
 
 
     function handleAdd() {
@@ -24,11 +21,7 @@ export default function Payment({ data }) {
         })
     }
 
-    const item = [];
 
-    for (var i = 0; i < add; i++) {
-        item.push(<PaymentInput />)
-    }
 
 
     return (
@@ -38,15 +31,17 @@ export default function Payment({ data }) {
                     <div className={styles.corospondingStudent}>
                         <div>Id</div>
                         <div>Name</div>
+                        <div> Father Name</div>
                         <div>Class</div>
                         <div>Due</div>
                         <div>Add To Payment</div>
                     </div>
                     <div className={styles.corospondingStudent}>
-                        <div>{data && data[0].customid}</div>
-                        <div>{data && data[0].fName}</div>
-                        <div>{data && data[0].faterName}</div>
-                        <div></div>
+                        <div>{data && data.customid}</div>
+                        <div>{data && data.fName}</div>
+                        <div>{data && data.fatherName}</div>
+                        <div>{data && data.wadmit}</div>
+                        <div>{data && data.due}</div>
                         <div>
                             {data && <button onClick={() => settickController(!tickController)} className={`${styles.addTickWrp} ${tickController && styles.addTickController}`}><TiTick className={styles.addTick} /></button>}
                         </div>
@@ -60,8 +55,7 @@ export default function Payment({ data }) {
                     <div> Fee :</div>
                     <div> Total :</div>
                 </div>
-
-                {item}
+                <PaymentInputWrp add={add} />
                 <div className={styles.btn}>
                     <button onClick={handleAdd}>+</button>
                     <button onClick={handleMains}>-</button>

@@ -26,7 +26,7 @@ export default function AllstTable({ data }) {
                         data.map((item, index) => {
                             return <Link key={item._id} className={styles.tbody} href={`/admin/students/${item._id}`} passHref>
                                 <td className={styles.bodydiv}>{index + 1}</td>
-                                <td className={styles.bodydiv}>Id</td>
+                                <td className={styles.bodydiv}>{item.customid}</td>
                                 <td className={styles.bodydiv}>{item.fName}</td>
                                 <td className={styles.bodydiv}>{item.faterName}</td>
                                 <td className={styles.bodydiv}>{item.moterName

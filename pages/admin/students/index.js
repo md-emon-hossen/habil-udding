@@ -1,5 +1,6 @@
 import AllstTable from "../../../componnent/Admin/AllstTable";
 import Layout from "../../../componnent/Admin/Layout";
+import Meta from "../../../componnent/Meta";
 import styles from "../../../styles/Admin/Allstudents.module.css";
 
 
@@ -10,6 +11,7 @@ export default function Allstudents({ data }) {
     return (
 
         <div className={styles.Swrp}>
+            <Meta title="Admin" name="Admin" content='Admin' />
             <div className={styles.tableHeader}>
                 <h1> All Students</h1>
                 <input placeholder="Search" className={styles.input} type='search' />

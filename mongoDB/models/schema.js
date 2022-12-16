@@ -58,6 +58,10 @@ export const sSchema = {
         default: false,
         type: Boolean,
     },
+    Paymentstatus: {
+        default: 0,
+        type: Number,
+    },
 
 
 }

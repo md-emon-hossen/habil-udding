@@ -4,8 +4,6 @@ export default async function postController(req, res) {
 
     const fromData = req.body;
 
-    console.log(fromData)
-
     await Student.create(fromData, (err) => {
         if (!err) {
             res.status(200).json({ messege: "Apply Finiesd Successfully" });
